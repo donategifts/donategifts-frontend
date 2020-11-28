@@ -1,6 +1,11 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import $ from 'jquery';
+import Popper from 'popper.js';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 import ReactDOM from 'react-dom';
-import './scss/index.scss';
+import './assets/scss/index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
