@@ -14,7 +14,7 @@
     "bootstrap": "lerna bootstrap --hoist --force-local",
     "build": "lerna run build --no-private",
     "clean": "gulp clean",
-    "lint": "eslint --fix --ext .ts,.tsx --ignore-path .eslintignore apps",
+    "lint": "eslint --fix --ext .ts,.tsx --ignore-path .eslintignore ./apps/*",
     "postinstall": "npm run bootstrap",
     "superclean": "gulp superclean",
     "update": "lernaupdate",
@@ -50,7 +50,7 @@
   },
   "husky": {
     "hooks": {
-      "__NOT_USED_pre-commit": "npm run lint"
+      "pre-commit": "npm run lint"
     }
   }
 }
