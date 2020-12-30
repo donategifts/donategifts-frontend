@@ -107,6 +107,8 @@ module.exports = {
 		/** ******************* */
 		'unicorn/prevent-abbreviations': 'off',
 
+		'unicorn/filename-case': 'off',
+
 		/** ******************* */
 		/*   React Rules    */
 		/** ******************* */

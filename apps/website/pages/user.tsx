@@ -1,6 +1,6 @@
 import React from 'react';
 import { userData } from '../helper/user-data';
-import { IUser } from '../types/user';
+import { IUser } from '../types/IUser';
 
 export default function User(props: { users: IUser[] }): JSX.Element {
 	let { users } = props;
