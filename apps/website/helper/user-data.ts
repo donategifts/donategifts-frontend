@@ -1,4 +1,6 @@
-export const userData = [
+import { IUser } from '../types/user';
+
+export const userData: IUser[] = [
 	{
 		_id: '5fc6791532fccf28903f88c4',
 		emailVerified: true,
@@ -11,7 +13,6 @@ export const userData = [
 		joined: '2020-12-01T17:10:43.047Z',
 		aboutMe: 'A person passion to help kids of all ages.',
 		loginMode: 'default',
-		__v: 0,
 	},
 	{
 		_id: '5fc6791532fccf28903f88c5',
@@ -25,7 +26,6 @@ export const userData = [
 		joined: '2020-12-01T17:10:42.973Z',
 		aboutMe: 'A person passion to help kids of all ages.',
 		loginMode: 'default',
-		__v: 0,
 	},
 	{
 		_id: '5fc6791532fccf28903f88c3',
@@ -39,7 +39,6 @@ export const userData = [
 		joined: '2020-12-01T17:10:43.123Z',
 		aboutMe: 'A person passion to help kids of all ages.',
 		loginMode: 'default',
-		__v: 0,
 	},
 	{
 		_id: '5fc96046b1c7f4333878a370',
@@ -52,7 +51,6 @@ export const userData = [
 		userRole: 'partner',
 		loginMode: 'Default',
 		joined: '2020-12-03T22:01:42.973Z',
-		__v: 0,
 		profileImage: 'https://donategifts.s3.amazonaws.com/56670505daa9310affe5127dbe332e56',
 	},
 	{
@@ -66,6 +64,5 @@ export const userData = [
 		userRole: 'donor',
 		loginMode: 'Facebook',
 		joined: '2020-12-09T18:24:09.499Z',
-		__v: 0,
 	},
 ];

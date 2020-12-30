@@ -1,28 +1,11 @@
 import React from 'react';
 import { userData } from '../helper/user-data';
+import { IUser } from '../types/user';
 
-interface IAPIUser {
-	_id: string;
-	fName: string;
-	lName: string;
-	email: string;
-	verificationHash: string;
-	emailVerified: boolean;
-	password: string;
-	passwordResetToken: string;
-	passwordResetTokenExpires: Date;
-	userRole: string;
-	wishCards: string;
-	donationsMade: string;
-	joined: Date;
-	aboutMe: string;
-	loginMode: string;
-}
-
-export default function User(props: { users: IAPIUser[] }): JSX.Element {
+export default function User(props: { users: IUser[] }): JSX.Element {
 	let { users } = props;
 	if (!users || users.length === 0) {
-		users = (userData as unknown) as IAPIUser[];
+		users = userData;
 	}
 	return (
 		<div>
