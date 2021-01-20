@@ -18,7 +18,8 @@
     "postinstall": "npm run bootstrap",
     "superclean": "gulp superclean",
     "update": "lernaupdate",
-    "upgradeDeps": "npx ncu -x socket.io -u && npx lerna exec --no-bail -- npx ncu -x socket.io -u"
+    "upgradeDeps": "npx ncu -x socket.io -u && npx lerna exec --no-bail -- npx ncu -x socket.io -u",
+    "dev": "next dev"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.6",
