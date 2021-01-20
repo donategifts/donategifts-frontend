@@ -1,8 +1,8 @@
 import React from 'react';
-import { userData } from '../helper/user-data';
-import { IUser } from '../types/IUser';
+import { userData } from '../../helper/user-data';
+import { IUser } from '../../types/IUser';
 
-export default function User(props: { users: IUser[] }): JSX.Element {
+export default function Index(props: { users: IUser[] }): JSX.Element {
 	let { users } = props;
 	if (!users || users.length === 0) {
 		users = userData;

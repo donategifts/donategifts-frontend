@@ -16,6 +16,7 @@
 		"build": "node_modules/.bin/next build",
 		"start": "node_modules/.bin/next start",
 		"lint:pages": "eslint --fix --ext .ts,.tsx --ignore-path .eslintignore pages/",
+		"lint:components": "eslint --fix --ext .ts,.tsx --ignore-path .eslintignore components/",
 		"lint": "npm run lint:pages"
 	},
 	"dependencies": {
