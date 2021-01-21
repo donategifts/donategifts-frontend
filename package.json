@@ -12,14 +12,14 @@
 		"url": "https://github.com/donategifts/donategifts-frontend/issues"
 	},
 	"scripts": {
-		"dev": "node_modules/.bin/next dev",
-		"build": "node_modules/.bin/next build",
-		"start": "node_modules/.bin/next start",
-		"lint:pages": "eslint --fix --ext .ts,.tsx --ignore-path .eslintignore pages/",
-		"lint": "npm run lint:pages"
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "eslint --fix --ext .ts,.tsx --ignore-path .eslintignore src/"
 	},
 	"dependencies": {
 		"autoprefixer": "^10.1.0",
+		"axios": "^0.21.1",
 		"next": "10.0.4",
 		"postcss": "^8.2.2",
 		"react": "17.0.1",
