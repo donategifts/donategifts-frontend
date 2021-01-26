@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import styles from '../styles/Home.module.scss';
+import styles from '@/styles/Home.module.scss';
 
 export default function Index(): JSX.Element {
 	return (

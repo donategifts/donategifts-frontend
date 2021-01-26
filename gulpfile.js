@@ -1,12 +1,12 @@
 const { parallel, task } = require('gulp');
 const del = require('del');
 
-task('cleanModules', () => del(['./node_modules', '**/node_modules'], { force: true, dot: true }));
+task('cleanModules', () => del(['node_modules', '**/node_modules'], { force: true, dot: true }));
 
-task('cleanTmp', () => del(['**/tsconfig.tsbuildinfo'], { force: true, dot: true }));
+task('cleanTmp', () => del(['tsconfig.tsbuildinfo'], { force: true, dot: true }));
 
 task('cleanNext', () =>
-  del(['**/dist'], {
+  del(['.next'], {
     force: true,
     dot: true,
   }),

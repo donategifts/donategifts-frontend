@@ -1,8 +1,8 @@
 import React from 'react';
 import { GetStaticProps } from 'next';
 import axios from 'axios';
-import { userData } from '../../helper/user-data';
-import { IUser } from '../../types/IUser';
+import { userData } from '@/helper/user-data';
+import { IUser } from '@/types/IUser';
 
 export default function Index(props: { user: IUser[] }): JSX.Element {
 	let { user } = props;
