@@ -3,7 +3,7 @@ import BaseLayout from '@/Components/Layout/BaseLayout';
 
 export default function Community(): JSX.Element {
 	return (
-		<BaseLayout>
+		<BaseLayout pageTitle="Community Page">
 			<div>Community Page</div>
 		</BaseLayout>
 	);

@@ -3,7 +3,7 @@ import BaseLayout from '@/Components/Layout/BaseLayout';
 
 export default function Howto(): JSX.Element {
 	return (
-		<BaseLayout>
+		<BaseLayout pageTitle="How To Page">
 			<div>How To Page</div>
 		</BaseLayout>
 	);

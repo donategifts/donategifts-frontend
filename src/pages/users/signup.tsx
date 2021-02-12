@@ -4,7 +4,7 @@ import BaseLayout from '@/Components/Layout/BaseLayout';
 
 export default function Signup(): JSX.Element {
 	return (
-		<BaseLayout>
+		<BaseLayout pageTitle="Sign Up">
 			<RegisterForm />
 		</BaseLayout>
 	);

@@ -3,7 +3,7 @@ import BaseLayout from '@/Components/Layout/BaseLayout';
 
 export default function Index(): JSX.Element {
 	return (
-		<BaseLayout>
+		<BaseLayout pageTitle="Wishcards">
 			<div>Wishcards Page</div>
 		</BaseLayout>
 	);
