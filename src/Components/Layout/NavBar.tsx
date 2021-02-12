@@ -1,83 +1,39 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import { navItems } from '@/Components/Layout/navItems';
 
 export default function NavBar(): JSX.Element {
 	return (
-		<div className="flex w-full h-16 bg-color-grey-light">
-			<div id="logo" className="w-1/3 flex justify-end">
+		<div className="flex w-full h-auto">
+			<div id="logo" className="w-1/3 flex justify-center">
 				<div className="flex items-center">
 					<Link href="/">
 						<button
 							type="button"
-							className="transition duration-500 ease-in-out background-transparent px-3 py-1 text-xs outline-none focus:outline-none text-color-text hover:text-color-text-hover"
+							className="background-transparent px-3 py-1 outline-none focus:outline-none"
 						>
-							Header image here
+							<Image
+								src="/assets/img/new-donate-gifts-logo-2.png"
+								alt="donate-gifts-logo"
+								width="90"
+								height="95"
+							/>
 						</button>
 					</Link>
 				</div>
 			</div>
 			<nav className="flex items-center justify-center w-2/3">
 				<ul className="flex">
-					<li>
-						<Link href="/wishcards">
-							<button
-								type="button"
-								className="transition duration-500 ease-in-out background-transparent px-3 py-1 text-xs outline-none focus:outline-none text-color-text hover:text-color-text-hover"
-							>
-								Wish Cards
-							</button>
-						</Link>
-					</li>
-					<li>
-						<Link href="/mission">
-							<button
-								type="button"
-								className="transition duration-500 ease-in-out background-transparent px-3 py-1 text-xs outline-none focus:outline-none text-color-text hover:text-color-text-hover"
-							>
-								Mission
-							</button>
-						</Link>
-					</li>
-					<li>
-						<Link href="/howto">
-							<button
-								type="button"
-								className="transition duration-500 ease-in-out background-transparent px-3 py-1 text-xs outline-none focus:outline-none text-color-text hover:text-color-text-hover"
-							>
-								How To
-							</button>
-						</Link>
-					</li>
-					<li>
-						<Link href="/community">
-							<button
-								type="button"
-								className="transition duration-500 ease-in-out background-transparent px-3 py-1 text-xs outline-none focus:outline-none text-color-text hover:text-color-text-hover"
-							>
-								Community
-							</button>
-						</Link>
-					</li>
-					<li>
-						<Link href="/users/signup">
-							<button
-								type="button"
-								className="transition duration-500 ease-in-out background-transparent px-3 py-1 text-xs outline-none focus:outline-none text-color-text hover:text-color-text-hover"
-							>
-								Sign up
-							</button>
-						</Link>
-					</li>
-					<li>
-						<Link href="/users/login">
-							<button
-								type="button"
-								className="transition duration-500 ease-in-out background-transparent px-3 py-1 text-xs outline-none focus:outline-none text-color-text hover:text-color-text-hover"
-							>
-								Login
-							</button>
-						</Link>
-					</li>
+					{navItems.items.map((item) => (
+						<li key={item.text}>
+							<Link href={item.link}>
+								<button type="button" className={navItems.style}>
+									{item.text}
+								</button>
+							</Link>
+						</li>
+					))}
 				</ul>
 			</nav>
 		</div>

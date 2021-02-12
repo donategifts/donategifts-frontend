@@ -6,23 +6,16 @@ module.exports = {
 	theme: {
 		extend: {},
 		colors: {
-			// add our whole color palette
-			// e.g
-			// 'color-blue': '#2a84e3',
-			// 'color-blue-hover': '#116BCA', // 10% darker of blue
-
-			'color-main': '',
-			'color-main-hover': '',
-
 			'color-text': '#343a40',
 			'color-text-hover': '#ff5c6f',
-
-			'color-main-light': '',
-			'color-main-lighter': '',
 
 			'color-grey': '#9a9a9a',
 			'color-grey-light': '#d6d6d6',
 
+			'color-yellow': '#ffbb59',
+			'color-dark': '#313131',
+
+			'color-white': '#fff',
 			transparent: 'transparent',
 		},
 		fontFamily: {
@@ -52,6 +45,7 @@ module.exports = {
 				'Liberation Serif',
 				'Georgia',
 				'serif',
+				'Quicksand'
 			],
 			mono: ['Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace'],
 		},
@@ -61,8 +55,8 @@ module.exports = {
 			xs: '',
 			sm: '',
 			base: '',
-			lg: '',
-			xl: '',
+			lg: '1.15em',
+			xl: '1.2em',
 			'2xl': '',
 			'3xl': '',
 			'4xl': '',
