@@ -1,5 +1,11 @@
 import React from 'react';
+import NavBar from '@/Components/Layout/NavBar';
 
 export default function Index(): JSX.Element {
-	return <div>Wishcards Page</div>;
+	return (
+		<>
+			<NavBar />
+			<div>Wishcards Page</div>
+		</>
+	);
 }

@@ -1,5 +1,11 @@
 import React from 'react';
+import NavBar from '@/Components/Layout/NavBar';
 
 export default function Donations(): JSX.Element {
-	return <div>Donations</div>;
+	return (
+		<>
+			<NavBar />
+			<div>Donations</div>
+		</>
+	);
 }

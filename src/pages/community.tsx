@@ -1,5 +1,11 @@
 import React from 'react';
+import NavBar from '@/Components/Layout/NavBar';
 
 export default function Community(): JSX.Element {
-	return <div>Community Page</div>;
+	return (
+		<>
+			<NavBar />
+			<div>Community Page</div>
+		</>
+	);
 }
