@@ -1,7 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import Footer from '@/Components/Layout/Footer';
-import NavBar from '@/Components/Layout/NavBar';
+import BaseLayout from '@/Components/Layout/BaseLayout';
 
 export default function Index(): JSX.Element {
 	return (
@@ -19,12 +18,11 @@ export default function Index(): JSX.Element {
 				<script src="https://kit.fontawesome.com/7a735561bb.js" crossOrigin="anonymous" />
 			</Head>
 
-			<NavBar />
-			<div className="flex w-full justify-center">
-				<div id="home-bg" className="w-full" />
-			</div>
-
-			<Footer />
+			<BaseLayout>
+				<div className="flex w-full justify-center">
+					<div id="home-bg" className="w-full" />
+				</div>
+			</BaseLayout>
 		</>
 	);
 }

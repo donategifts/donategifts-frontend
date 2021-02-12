@@ -1,11 +1,10 @@
 import React from 'react';
-import NavBar from '@/Components/Layout/NavBar';
+import BaseLayout from '@/Components/Layout/BaseLayout';
 
 export default function Index(): JSX.Element {
 	return (
-		<>
-			<NavBar />
+		<BaseLayout>
 			<div>Wishcards Page</div>
-		</>
+		</BaseLayout>
 	);
 }

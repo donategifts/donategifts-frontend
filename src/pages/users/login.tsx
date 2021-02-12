@@ -1,12 +1,11 @@
 import React from 'react';
 import LoginForm from '@/Components/Authentication/LoginForm';
-import NavBar from '@/Components/Layout/NavBar';
+import BaseLayout from '@/Components/Layout/BaseLayout';
 
 export default function Login(): JSX.Element {
 	return (
-		<>
-			<NavBar />
+		<BaseLayout>
 			<LoginForm />
-		</>
+		</BaseLayout>
 	);
 }

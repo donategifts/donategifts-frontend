@@ -1,11 +1,10 @@
 import React from 'react';
-import NavBar from '@/Components/Layout/NavBar';
+import BaseLayout from '@/Components/Layout/BaseLayout';
 
 export default function Howto(): JSX.Element {
 	return (
-		<>
-			<NavBar />
+		<BaseLayout>
 			<div>How To Page</div>
-		</>
+		</BaseLayout>
 	);
 }
