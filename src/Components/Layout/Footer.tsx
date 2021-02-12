@@ -76,7 +76,6 @@ export default function Footer(): JSX.Element {
 								<span className="hover:underline">{item.text}</span>
 							</Link>
 						</button>
-						{console.log(index, breadCrumbs.length)}
 						{index + 1 !== breadCrumbs.length && <span>|</span>}
 					</div>
 				))}
