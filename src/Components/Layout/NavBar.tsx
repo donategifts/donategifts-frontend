@@ -9,7 +9,7 @@ export default function NavBar(): JSX.Element {
 					<Link href="/">
 						<button
 							type="button"
-							className="transition duration-500 ease-in-out background-transparent px-3 py-1 text-xs outline-none focus:outline-none mr-1 mb-1 text-color-text hover:text-color-text-hover"
+							className="transition duration-500 ease-in-out background-transparent px-3 py-1 text-xs outline-none focus:outline-none text-color-text hover:text-color-text-hover"
 						>
 							Header image here
 						</button>
@@ -22,7 +22,7 @@ export default function NavBar(): JSX.Element {
 						<Link href="/wishcards">
 							<button
 								type="button"
-								className="transition duration-500 ease-in-out background-transparent px-3 py-1 text-xs outline-none focus:outline-none mr-1 mb-1 text-color-text hover:text-color-text-hover"
+								className="transition duration-500 ease-in-out background-transparent px-3 py-1 text-xs outline-none focus:outline-none text-color-text hover:text-color-text-hover"
 							>
 								Wish Cards
 							</button>
@@ -32,7 +32,7 @@ export default function NavBar(): JSX.Element {
 						<Link href="/mission">
 							<button
 								type="button"
-								className="transition duration-500 ease-in-out background-transparent px-3 py-1 text-xs outline-none focus:outline-none mr-1 mb-1 text-color-text hover:text-color-text-hover"
+								className="transition duration-500 ease-in-out background-transparent px-3 py-1 text-xs outline-none focus:outline-none text-color-text hover:text-color-text-hover"
 							>
 								Mission
 							</button>
@@ -42,7 +42,7 @@ export default function NavBar(): JSX.Element {
 						<Link href="/howto">
 							<button
 								type="button"
-								className="transition duration-500 ease-in-out background-transparent px-3 py-1 text-xs outline-none focus:outline-none mr-1 mb-1 text-color-text hover:text-color-text-hover"
+								className="transition duration-500 ease-in-out background-transparent px-3 py-1 text-xs outline-none focus:outline-none text-color-text hover:text-color-text-hover"
 							>
 								How To
 							</button>
@@ -52,7 +52,7 @@ export default function NavBar(): JSX.Element {
 						<Link href="/community">
 							<button
 								type="button"
-								className="transition duration-500 ease-in-out background-transparent px-3 py-1 text-xs outline-none focus:outline-none mr-1 mb-1 text-color-text hover:text-color-text-hover"
+								className="transition duration-500 ease-in-out background-transparent px-3 py-1 text-xs outline-none focus:outline-none text-color-text hover:text-color-text-hover"
 							>
 								Community
 							</button>
@@ -62,7 +62,7 @@ export default function NavBar(): JSX.Element {
 						<Link href="/users/signup">
 							<button
 								type="button"
-								className="transition duration-500 ease-in-out background-transparent px-3 py-1 text-xs outline-none focus:outline-none mr-1 mb-1 text-color-text hover:text-color-text-hover"
+								className="transition duration-500 ease-in-out background-transparent px-3 py-1 text-xs outline-none focus:outline-none text-color-text hover:text-color-text-hover"
 							>
 								Sign up
 							</button>
@@ -72,7 +72,7 @@ export default function NavBar(): JSX.Element {
 						<Link href="/users/login">
 							<button
 								type="button"
-								className="transition duration-500 ease-in-out background-transparent px-3 py-1 text-xs outline-none focus:outline-none mr-1 mb-1 text-color-text hover:text-color-text-hover"
+								className="transition duration-500 ease-in-out background-transparent px-3 py-1 text-xs outline-none focus:outline-none text-color-text hover:text-color-text-hover"
 							>
 								Login
 							</button>
