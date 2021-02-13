@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 import Link from 'next/link';
 import React from 'react';
 
@@ -55,7 +56,7 @@ export default function Footer(): JSX.Element {
 				</a>
 				<i className="fa fa-heart mt-1" aria-hidden />
 			</p>
-			<div className="flex justify-center">
+			<div className="flex flex-wrap justify-center">
 				<div className="text-color-white">
 					<button type="button" className="px-2">
 						<a
@@ -80,12 +81,10 @@ export default function Footer(): JSX.Element {
 					</div>
 				))}
 			</div>
-			<div className="text-color-white p-2 flex justify-center">
-				<p>
-					Donate Gifts Inc.
-					{new Date().getFullYear()}
-					All rights reserverd
-				</p>
+			<div className="text-color-white p-2 flex justify-center space-x-1">
+				<p>Donate Gifts Inc.</p>
+				<p>{new Date().getFullYear()}.</p>
+				<p>All rights reserverd</p>
 			</div>
 		</div>
 	);
